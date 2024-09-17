@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Main content
+   ========================================================================== */
+
+body{
+    background-image: url(../assets/images/cafe.webp);
+    background-repeat: no-repeat ;
+    background-size:cover;
+    background-position: center ;
+}
+
+main{
+    color: var(--text);
+    text-align: center;
+    margin: 0 20px;
+    font-family:var(--flashy-heading);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#cafe-top div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 16px;
+    font-family:'Exo', sans-serif;
+}
+
+#cafe-top div a{
+    height:fit-content;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#cafe-top h1{
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    font-family:var(--flashy-heading);
+}
+
+#see-more-menu{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+#cafe-bottom:nth-child(2){
+    font-size: 14px;
+}
+
+.main-text{
+    font-size: 12px;
+}
+
+#text-bottom-coffee{
+    max-width: 100%;
+}
+
+#text-bottom-coffee:first-child{
+    font-size: 20px;
+}
+
+#cafe-bottom, #cafe-top{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-text{
+    margin-top: 16px;
+}
+
+#cafe-top{
+    margin-bottom: 32px;
+}
+
+#cafe-bottom{
+    margin-bottom: 30px;
+    gap: 16px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+   /* Tablet
+   ========================================================================== */
+    @media (min-width: 750px){
+        #cafe-top div{
+            justify-content: space-evenly;
+        }
+    
+        #text-bottom-coffee{
+            max-width: 50%;
+        }
+
+        #cafe-bottom img{
+            max-width: 50%;
+        }
+
+        #cafe-bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+
+        #cafe-top h1{
+            font-size: 32px;
+        }
+
+        #brewlab-header{
+            font-size: 20px;
+        }
+
+        .main-text{
+            font-size: 14px;
+        }
+
+    }
+    /* Desktop
+   ========================================================================== */
+   @media (min-width: 1300px){
+    body{
+        background-image: url(../assets/images/cafe.webp);
+        border-left: 250px;
+        border-right: 250px;
+    }
+
+    #cafe-bottom img{
+        width: 333px;
+        height: 333px;
+    }
+
+    main{
+        margin-bottom: 10px;
+    }
+
+    #brewlab-header{
+        font-size: 20px;
+    }
+
+    .main-text{
+        font-size: 16px;
+    }
+
+    #cafe-top div{
+        justify-content: center;
+        gap: 64px;
+    }
+
+} 

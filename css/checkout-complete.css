@@ -1,0 +1,69 @@
+main {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+body {
+    background-image: url("/assets/images/background-payment.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#all-done-box {
+    background-color: rgba(165, 169, 169, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 613px;
+    height: 576px;
+    justify-content: space-evenly;
+    margin: auto;
+    border-radius: 16px;
+    border: #FFFFFF 1px solid;
+    font-family: 'Exo', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+#white-logo {
+    width: 73px;
+    height: 82px;
+}
+
+.mid-text {
+    font-family: var(--heading);
+    font-size: 20px;
+}
+
+#ref-nr {
+    color: var(--secondary);
+}
+@media (min-width: 1200px) {
+ #all-done-box {
+     width: 736px;
+ }
+}
+
+@media (max-width: 800px) {
+    #all-done-box {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 500px;
+    }
+   }
+
+   @media (max-width: 600px) {
+    #all-done-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 300px;
+        width: auto;
+    }
+
+    main{
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+   }

@@ -1,0 +1,162 @@
+main{
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    font-family: var(--flashy-heading);
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#description-about-us{
+    font-family:var(--paragraphs);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#title-about-us{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#title-founders{
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+#founders-image{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/assets/logo/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 40vw;
+    width: 40vw;
+    overflow:visible;
+    margin-bottom: 180px;
+    margin-top: 40px;
+}
+
+#founders-image img{
+    max-width: 10vw;
+    max-height: 10vw;
+    position: relative;
+    border-radius: 100%;
+}
+
+#founders-image div{
+    overflow: visible;
+    position: relative;
+}
+
+/*Aksel*/
+
+#aksel{
+    top: 15%;
+}
+
+#nametag-aksel{
+    top: 45%;
+}
+
+#aksel:hover ~ #nametag-aksel{
+    display: flex;
+    padding: 10px;
+}
+
+/*Helene*/
+
+
+#helene{
+    top: 83%;
+}
+
+#nametag-helene{
+    top: 115%;
+    text-align: center;
+    padding: 10px;
+}
+
+#helene:hover ~ #nametag-helene{
+    display: flex;
+    position: absolute;
+}
+
+/*Panida*/
+
+#panida{
+    top: 15%;
+}
+
+#nametag-panida{
+    top: 45%;
+}
+
+#panida:hover ~ #nametag-panida{
+    display: flex;
+    padding: 10px;
+}
+
+/*Nametag*/
+
+.nametag{
+    display: none;
+    position:absolute;
+    color: white;
+    font-family: var(--flashy-heading);
+    text-shadow: var(--additional) 0 0 10px;
+    transition-duration: 300ms;
+    animation-duration: 200ms;
+}
+
+
+
+#founders-image img:hover{
+    transition-duration: 300ms;
+}
+
+#founders-image #helene:hover{
+    box-shadow: #ee68c3 0 0 40px;
+}
+
+#founders-image #aksel:hover{
+    box-shadow: var(--additional) 0 0 40px;
+}
+
+#founders-image #panida:hover{
+    box-shadow: #e50000 0 0 40px;
+}
+
+@media (max-width: 833px){
+    #founders-image{
+        height: 80vw;
+        width: 80vw;
+    }
+    
+    #founders-image img{
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+    
+    #aksel{
+        left: 0;
+        top: 15%;
+    }
+    
+    #helene{
+        top: 83%;
+    }
+    
+    #panida{
+        top: 15%;
+    }
+}

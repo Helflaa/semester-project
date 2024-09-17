@@ -18,9 +18,9 @@
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
 <!--Specific meta For THIS page-->
-    <title>Welcome to Matter Museum</title>
-    <meta name="description" content="Front page"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>About us</title>
+    <meta name="description" content="About us"/>
+    <link rel="stylesheet" href="css/about-us.css"/>
 </head>
 <body>
     <!--Header section -->
@@ -91,71 +91,35 @@
         </ul>
     </header>
 
-    <!--Main section-->
-    <main class="contents">
-        <div class="hero-banner">
-            <div class="overlay-pic-1">
-            </div>
-            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-                width="543">
-            <span>
-                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-            </span>
-        </div>
-        <div class="button-container">
-            <button class="yellow-button button-component" aria-label="Explore Button">
-                Explore
-            </button>
-        </div>
-        <div class="matters" aria-label="Four States of Matters Section">
-            <h1>4 STATES OF MATTERS</h1>
-            <div class="four-states">
-                <div class="state">
-                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                    <p>Solid</p>
+    <!--Main section -->
+    <main>
+        <article>
+            <h1 id="title-about-us">About us</h1>
+            <p id="description-about-us">
+                Introducing the dynamic trio behind the awe-inspiring journey of our science museum: 
+                Dr. Panida Paethanom, the stargazing luminary lunatic and astrophysicist; Aksel Oldeide, 
+                the ingenious engineer weaving innovation into every exhibit; and Helene Høgås, 
+                the enthusiastic educator infusing a sense of wonder into science education. 
+                Driven by their collective passion for demystifying the marvels of the universe, 
+                this visionary alliance has birthed an immersive space where curiosity knows no bounds.</p>
+        </article>
+        <figure>
+            <figcaption><h2 id="title-founders">Meet our founders:</h2></figcaption>
+            <div id="founders-image">
+                <div id="aksel-figure">
+                    <img id="aksel"  src="./assets/images/profile-pic/Aksel.png" alt="An image of one of the co-founders, Aksel">
+                    <p id="nametag-aksel" class="nametag">Aksel Oldeide</p>
                 </div>
-                <div class="state">
-                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                    <p>Liquid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                    <p>gas</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                        width="208">
-                    <p>plasma</p>
+                <div id="helene-figure">
+                    <img id="helene" src="./assets/images/profile-pic/Helene.png" alt="An image of one of the co-founders, Helene">
+                    <p id="nametag-helene" class="nametag">Helene Flått Høgås</p>
+                </div> 
+                <div id="panida-figure">
+                    <img id="panida" src="./assets/images/profile-pic/Panida.png" alt="An image of one of the co-founders, Panida">
+                    <p id="nametag-panida" class="nametag">Panida Paethanom</p>
                 </div>
             </div>
-        </div>
-        <!--Info buttons for tickets, opening hours and location-->
-        <div class="info" aria-label="Information Section">
-            <div class="container">
-                <a class="pic" href="tickets.html" aria-label="Link to tickets page">
-                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-                </a>
-            </div>
-        </div>
-        <div class="explore-matter" aria-label="Explore Matters Section">
-            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-            Explore matters
-            </a>
-            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.webp" height="268"
-                width="834">
-        </div>
+        </figure>
     </main>
 
     <!--Footer section-->
@@ -165,8 +129,8 @@
             <a href="mailto:contact@museum.com" aria-label="Compose a new mail to our support team">
                 <p>contact@mattermuseum.com</p>
             </a>
-            <a href="tel:47 900 50 420"  aria-label="Click to call our support phone number">
-                <p id="phone">+47 900 50 420</p>
+            <a href="tel:4790050420"  aria-label="Click to call our support phone number">
+                <p id="phone">+4790050420</p>
             </a>
             <p>(Mon-Fri 10:00-17:00)</p>
         </div>

@@ -18,10 +18,11 @@
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
 <!--Specific meta For THIS page-->
-    <title>Welcome to Matter Museum</title>
-    <meta name="description" content="Front page"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>Payment option</title>
+    <meta name="description" content="Please enter your payment details"/>
+    <link rel="stylesheet" href="css/payment.css"/>
 </head>
+
 <body>
     <!--Header section -->
     <header>
@@ -91,72 +92,73 @@
         </ul>
     </header>
 
-    <!--Main section-->
-    <main class="contents">
-        <div class="hero-banner">
-            <div class="overlay-pic-1">
-            </div>
-            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-                width="543">
-            <span>
-                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-            </span>
+    <div class="content">
+    <div class="payment-flex">
+        <h1 class="payment-header">PAYMENT</h1>
+        <div class="payment-container">
+        <div class="name-div">
+            <label for="name"></label>
+            <input type="text" class="form-content" id="name" name="name" placeholder="First name" required>
         </div>
-        <div class="button-container">
-            <button class="yellow-button button-component" aria-label="Explore Button">
-                Explore
-            </button>
+        <div class="last-name-div">
+            <label for="last-name"></label>
+            <input type="text" class="form-content" id="last-name" name="last-name" placeholder="Last name" required>
         </div>
-        <div class="matters" aria-label="Four States of Matters Section">
-            <h1>4 STATES OF MATTERS</h1>
-            <div class="four-states">
-                <div class="state">
-                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                    <p>Solid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                    <p>Liquid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                    <p>gas</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                        width="208">
-                    <p>plasma</p>
-                </div>
-            </div>
+        <div class="card-number-div">
+            <label for="card-number"></label>
+            <input type="text" class="form-content" id="card-number" name="card-number" placeholder="Card number" required>
         </div>
-        <!--Info buttons for tickets, opening hours and location-->
-        <div class="info" aria-label="Information Section">
-            <div class="container">
-                <a class="pic" href="tickets.html" aria-label="Link to tickets page">
-                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-                </a>
-            </div>
+        <div class="expiry-div">
+            <label for="expiry"></label>
+            <input type="text" class="form-content" id="expiry" name="expiry" placeholder="Expiry date mm/yy" required>
         </div>
-        <div class="explore-matter" aria-label="Explore Matters Section">
-            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-            Explore matters
-            </a>
-            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.webp" height="268"
-                width="834">
+        <div class="cvv-div">
+            <label for="cvv"></label>
+            <input type="text" class="form-content" id="cvv" name="cvv" placeholder="cvv" required>
         </div>
-    </main>
+        <div class="phone-div">
+            <label for="phone-number"></label>
+            <input type="text" class="form-content" id="phone-number" name="phone" placeholder="Phone number" required>
+        </div>
+        <div class="address-div">
+            <label for="address"></label>
+            <input type="text" class="form-content" id="address" name="address" placeholder="Address" required>
+        </div>
+        <div class="city-div">
+            <label for="city"></label>
+            <input type="text" class="form-content" id="city" name="city" placeholder="City" required>
+        </div>
+        <div class="country-div">
+            <label for="country"></label>
+            <input type="text" class="form-content" id="country" name="country" placeholder="Country" required>
+        </div>
+        <div class="zip-div">
+            <label for="zip"></label>
+            <input type="text" class="form-content" id="zip" name="zip" placeholder="Zip code" required>
+        </div>
+        <div class="radio-container-1">
+            <input type="radio" id="news" name="news-letters-acceptance" class="radio-input" value="yes">
+            <label for="news" class="news-letter-radio">
+            <span class="radio-label">I agree to receive newsletters</span>
+            </label>
+        </div>
+        <div class="radio-container-2">
+            <input type="radio" id="read" name="have-read-policy" class="radio-input" value="yes">
+            <label for="read" class="read-radio">
+                    <span class="radio-label">I have read, understood and accepted the
+                        <a href="#">
+                            policy
+                        </a>
+                    </span>
+            </label>
+        </div>
+        <div class="buttons-container">
+            <button type="button" class="yellow-button button-component">Back</button>
+            <a href="checkout-complete.html" aria-label="Confirm and pay for tickets"><button type="button" class="yellow-button button-component">Submit</button></a>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <!--Footer section-->
     <footer>
@@ -240,4 +242,3 @@
         </div>
     </footer>
 </body>
-</html>

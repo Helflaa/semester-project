@@ -18,9 +18,9 @@
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
 <!--Specific meta For THIS page-->
-    <title>Welcome to Matter Museum</title>
-    <meta name="description" content="Front page"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>Contact us</title>
+    <meta name="description" content="Do you have a question or feedback for us?"/>
+    <link rel="stylesheet" href="css/contact-us.css">
 </head>
 <body>
     <!--Header section -->
@@ -91,72 +91,66 @@
         </ul>
     </header>
 
-    <!--Main section-->
-    <main class="contents">
-        <div class="hero-banner">
-            <div class="overlay-pic-1">
-            </div>
-            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-                width="543">
-            <span>
-                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-            </span>
-        </div>
-        <div class="button-container">
-            <button class="yellow-button button-component" aria-label="Explore Button">
-                Explore
-            </button>
-        </div>
-        <div class="matters" aria-label="Four States of Matters Section">
-            <h1>4 STATES OF MATTERS</h1>
-            <div class="four-states">
-                <div class="state">
-                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                    <p>Solid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                    <p>Liquid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                    <p>gas</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                        width="208">
-                    <p>plasma</p>
-                </div>
-            </div>
-        </div>
-        <!--Info buttons for tickets, opening hours and location-->
-        <div class="info" aria-label="Information Section">
-            <div class="container">
-                <a class="pic" href="tickets.html" aria-label="Link to tickets page">
-                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                        width="400">
+    <!--Main section -->
+    <h1 id="heading-contact-us">Contact us</h1>
+    <hr>
+    <main>
+        <section id="contact-form">
+            <form>
+                <h2>Contact form:</h2>
+                <label>
+                    <input type="text" name="name" placeholder="Full name" class="form-content">
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Email" class="form-content">
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Phone number" class="form-content">
+                </label>
+                <label>
+                    <select class="form-content">
+                        <option>Lost and found</option>
+                        <option> General questions</option>
+                        <option>Schools/groups</option>
+                        <option>Volunteer</option>
+                        <option>Guided tours</option>
+                        <option>Other inquiries</option>
+                    </select>
+                </label>
+                <label for=""></label><textarea name="description" id="" cols="30" rows="10" placeholder="Description" class="form-content"></textarea>
+                <input type="submit" class="green-button button-component">
+            </form>
+        </section>
+        <hr>
+        <section id="contact-other">
+            <h2>Social Channels:</h2>
+            <p>Feel free to send us a message or tag us at:</p>
+            <div id="social-contact-buttons">
+                <a href="https://www.facebook.com">
+                    <img src="./assets/logo/facebook.png" alt="facebook logo">
+                </a>                
+                <a href="https://www.youtube.com">
+                    <img src="./assets/logo/youtube.png" alt="youtube logo">
+                </a>
+                <a href="https://www.x.com">
+                    <img src="./assets/logo/x-logo-2.png" alt="x logo">
                 </a>
             </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-                </a>
-            </div>
-        </div>
-        <div class="explore-matter" aria-label="Explore Matters Section">
-            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-            Explore matters
-            </a>
-            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.webp" height="268"
-                width="834">
-        </div>
+            <article>
+                <h2>Further inquiries:</h2>
+                <div id="phone-and-email"></div>
+                    <div id="phone-contact-number">
+                        <p class="mini-header">Phone</p>
+                        <p>+4790050420 <br> (Mon.-Fri: 10:00-20:00) </p>
+                    </div>
+                    <div id="email">
+                        <p class="mini-header">Email</p>
+                        <p>Contact@science-museum.no</p>
+                    </div>
+            </article>
+        </section>
     </main>
+    <hr id="bottom-split">
 
     <!--Footer section-->
     <footer>
@@ -165,8 +159,8 @@
             <a href="mailto:contact@museum.com" aria-label="Compose a new mail to our support team">
                 <p>contact@mattermuseum.com</p>
             </a>
-            <a href="tel:47 900 50 420"  aria-label="Click to call our support phone number">
-                <p id="phone">+47 900 50 420</p>
+            <a href="tel:4790050420"  aria-label="Click to call our support phone number">
+                <p id="phone">+4790050420</p>
             </a>
             <p>(Mon-Fri 10:00-17:00)</p>
         </div>

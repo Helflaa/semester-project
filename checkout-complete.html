@@ -18,13 +18,13 @@
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
 <!--Specific meta For THIS page-->
-    <title>Welcome to Matter Museum</title>
-    <meta name="description" content="Front page"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>Checkout Complete</title>
+    <meta name="description" content="Thank you for your purchase"/>
+    <link rel="stylesheet" href="css/checkout-complete.css"/>
 </head>
 <body>
     <!--Header section -->
-    <header>
+    <header aria-label="Header Section">
         <a href="index.html" class="logo-container" aria-label="Matter Museum Home">
             <img class="logo" alt="logo" src="assets/logo/atom-core-green2.png" height="1734" width="1542">
         </a>
@@ -91,82 +91,30 @@
         </ul>
     </header>
 
-    <!--Main section-->
-    <main class="contents">
-        <div class="hero-banner">
-            <div class="overlay-pic-1">
-            </div>
-            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-                width="543">
-            <span>
-                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-            </span>
-        </div>
-        <div class="button-container">
-            <button class="yellow-button button-component" aria-label="Explore Button">
-                Explore
-            </button>
-        </div>
-        <div class="matters" aria-label="Four States of Matters Section">
-            <h1>4 STATES OF MATTERS</h1>
-            <div class="four-states">
-                <div class="state">
-                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                    <p>Solid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                    <p>Liquid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                    <p>gas</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                        width="208">
-                    <p>plasma</p>
-                </div>
-            </div>
-        </div>
-        <!--Info buttons for tickets, opening hours and location-->
-        <div class="info" aria-label="Information Section">
-            <div class="container">
-                <a class="pic" href="tickets.html" aria-label="Link to tickets page">
-                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-                </a>
-            </div>
-        </div>
-        <div class="explore-matter" aria-label="Explore Matters Section">
-            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-            Explore matters
-            </a>
-            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.webp" height="268"
-                width="834">
-        </div>
+    <!--Main section -->
+    <main>
+       <section id="all-done-box">
+           <h1>ALL DONE!</h1>
+           <img src="assets/logo/white-logo.png" id="white-logo" alt="white atom logo">
+           <p>Thank you for your purchase!
+               Get ready to explore the world of science.</p>
+           <p class="mid-text">Here’s your ticket reference number </p>
+           <p class="mid-text" id="ref-nr">420-303</p>
+           <p>Your tickets have also been sent to your email.
+               Or click below to download your tickets</p>
+           <button class="button-component green-button">Click here to download ticket</button>
+       </section>
     </main>
 
     <!--Footer section-->
-    <footer>
+    <footer aria-label="Footer Section">
         <div class="contact">
             <h2>Contact:</h2>
             <a href="mailto:contact@museum.com" aria-label="Compose a new mail to our support team">
                 <p>contact@mattermuseum.com</p>
             </a>
-            <a href="tel:47 900 50 420"  aria-label="Click to call our support phone number">
-                <p id="phone">+47 900 50 420</p>
+            <a href="tel:4790050420"  aria-label="Click to call our support phone number">
+                <p id="phone">+4790050420</p>
             </a>
             <p>(Mon-Fri 10:00-17:00)</p>
         </div>

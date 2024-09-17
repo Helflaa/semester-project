@@ -18,10 +18,11 @@
     <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
 
 <!--Specific meta For THIS page-->
-    <title>Welcome to Matter Museum</title>
-    <meta name="description" content="Front page"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>Tickets</title>
+    <meta name="description" content="Order tickets to our museum"/>
+    <link rel="stylesheet" href="css/tickets.css"/>
 </head>
+
 <body>
     <!--Header section -->
     <header>
@@ -92,71 +93,65 @@
     </header>
 
     <!--Main section-->
-    <main class="contents">
-        <div class="hero-banner">
-            <div class="overlay-pic-1">
+    <div class="content">
+        <img class="img" alt="ticket-buying" src="assets/images/ticket-with-overlay.jpg" height="1310" width="1439">
+        <div class="ticket-price">
+            <div class="ticket-grid">
+                <div class="ticket-header">
+                    <h1>BUY TICKETS</h1>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Children (4-17)</p>
+                    <p>NOK 70</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Adult (18 and over)</p>
+                    <p>NOK 170</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Student</p>
+                    <p>NOK 100</p>
+                </div>
+                <div class="ticket-second-row">
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <p>1</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="ticket-first-row">
+                    <p>Total</p>
+                </div>
+                <div class="ticket-second-row">
+                    <p>NOK 340</p>
+                </div>
             </div>
-            <img class="pic-1" alt="parents and children" src="assets/images/parents-and-children-1.jpeg" height="543"
-                width="543">
-            <span>
-                Embark on a journey through the captivating realms of matter! Our science museum invites you to witness the marvels of solids, liquids, gases, and plasmas immersive experience blending education and awe.
-            </span>
         </div>
-        <div class="button-container">
-            <button class="yellow-button button-component" aria-label="Explore Button">
-                Explore
-            </button>
-        </div>
-        <div class="matters" aria-label="Four States of Matters Section">
-            <h1>4 STATES OF MATTERS</h1>
-            <div class="four-states">
-                <div class="state">
-                    <img class="state-logo" alt="solid-matter" src="assets/logo/solid-logo-1.png" height="184" width="185">
-                    <p>Solid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="liquid-matter" src="assets/logo/water-logo-1.png" height="222" width="222">
-                    <p>Liquid</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="gas-matter" src="assets/logo/gas-logo-1.png" height="220" width="221">
-                    <p>gas</p>
-                </div>
-                <div class="state">
-                    <img class="state-logo" alt="plasma-matter" src="assets/logo/plasma-logo-1.png" height="208"
-                        width="208">
-                    <p>plasma</p>
-                </div>
+        <div class="calendar-section">
+            <h2>SELECT DATE</h2>
+            <div class="calendar-container">
+                <img alt="calendar" class="calendar" src="assets/images/calendar.png">
             </div>
-        </div>
-        <!--Info buttons for tickets, opening hours and location-->
-        <div class="info" aria-label="Information Section">
-            <div class="container">
-                <a class="pic" href="tickets.html" aria-label="Link to tickets page">
-                    <img class="img" alt="family buying tickets" src="assets/images/ticket-price-pic.png" height="400"
-                        width="400">
+            <div class="button-container">
+                <button class="green-button button-component" aria-label="Inactive link">
+                    Add discount code
+                </button>
+                <a href="checkout.html">
+                    <button class="green-button button-component">
+                        Checkout
+                    </button>
                 </a>
             </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img class="img" alt="clock tower" src="assets/images/opening-time-pic.png" height="400"
-                        width="400">
-                </a>
-            </div>
-            <div class="container">
-                <a class="pic" href="about-us.html" aria-label="Link to about us page">
-                    <img alt="museum" class="img" src="assets/images/location-pic.png" height="400" width="400">
-                </a>
-            </div>
         </div>
-        <div class="explore-matter" aria-label="Explore Matters Section">
-            <a href="exhibitions.html" class="yellow-button button-component" id="explore-matters" aria-label="Explore Matters Button">
-            Explore matters
-            </a>
-            <img class="matter-states" alt="matter in all states" src="assets/images/banner-image.webp" height="268"
-                width="834">
-        </div>
-    </main>
+    </div>
 
     <!--Footer section-->
     <footer>
@@ -240,4 +235,5 @@
         </div>
     </footer>
 </body>
+
 </html>
